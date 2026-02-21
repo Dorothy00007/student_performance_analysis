@@ -1,7 +1,16 @@
-"""
-Student Performance Analytics - Fixed Version (No statsmodels needed)
-Save this as t.py and run: streamlit run t.py
-"""
+import sys
+import subprocess
+
+# Install missing packages
+packages = ['plotly', 'streamlit', 'pandas', 'numpy', 'scikit-learn']
+for package in packages:
+    try:
+        __import__(package)
+    except ImportError:
+        subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+
+
+
 
 import streamlit as st
 import pandas as pd
