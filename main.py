@@ -128,7 +128,7 @@ with st.sidebar:
     page = st.radio("Go to:", [
         "🏠 Dashboard",
         "🔍 Data Explorer",
-        "🤖 ML Models",
+        "🤖 Feature Importance",
         "🎯 Risk Predictor"
     ])
 
