@@ -1,4 +1,5 @@
 
+
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -127,7 +128,7 @@ with st.sidebar:
     page = st.radio("Go to:", [
         "🏠 Dashboard",
         "🔍 Data Explorer",
-        "🤖 Feature Importace",
+        "🤖 ML Models",
         "🎯 Risk Predictor"
     ])
 
@@ -204,7 +205,7 @@ elif page == "🔍 Data Explorer":
 # ============================================
 # ML Models Page
 # ============================================
-elif page == "🤖 Feature Importance":
+elif page == "🤖 ML Models":
     st.markdown("<h1 class='main-header'>🤖 ML Models</h1>", unsafe_allow_html=True)
     
     features = ['StudyTimeWeekly', 'Absences', 'ParentalSupport', 'TotalActivities']
