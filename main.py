@@ -205,7 +205,7 @@ elif page == "🔍 Data Explorer":
 # ============================================
 # ML Models Page
 # ============================================
-elif page == "🤖 ML Models":
+elif page == "🤖 Feature Importance":
     st.markdown("<h1 class='main-header'>🤖 ML Models</h1>", unsafe_allow_html=True)
     
     features = ['StudyTimeWeekly', 'Absences', 'ParentalSupport', 'TotalActivities']
